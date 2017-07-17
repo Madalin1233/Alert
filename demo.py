@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from albatar import *
+from inject import *
 import re
 from urllib import quote_plus
 

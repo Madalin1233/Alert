@@ -1,4 +1,4 @@
-from sqli1 import *
+from alert1 import *
 from urllib import quote
 import re
 

